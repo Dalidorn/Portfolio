@@ -1,0 +1,29 @@
+/* ||| Global ||| */
+
+/* Colors */
+
+:root {
+    --primarycolor: white;
+    --secondarycolor: red;
+    --tertiarycolor: blue;
+}
+
+/* General Config */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Global Classes */
+
+/* ||| h- Styling ||| */
+
+/* ||| Header Style ||| */
+
+/*  ||| Background Image |||  */
+
+/* ||| Primary Element Selectors ||| */
+
+/* ||| Footer Style ||| */
