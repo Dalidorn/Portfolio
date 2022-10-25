@@ -1,11 +1,11 @@
 /* ||| Global ||| */
 
-/* Colors */
+/* Color Variables */
 
 :root {
     --primarycolor: white;
-    --secondarycolor: red;
-    --tertiarycolor: blue;
+    --secondarycolor: rgb(31, 0, 0);
+    --tertiarycolor: rgb(1, 1, 24);
 }
 
 /* General Config */
@@ -16,19 +16,118 @@
     margin: 0;
 }
 
+.backdropgradient {
+    background-image: linear-gradient(var(--secondarycolor), 20%, var(--tertiarycolor));
+}
+
+main {
+    /* display: flex; */
+}
+
 /* Global Classes */
 
-/* ||| h- Styling ||| */
+/* ||| h- Style ||| */
+
+h1, h2, h3, h4 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 75px;
+}
+
+h2 {
+    font-size: 100px;
+}
+
+h3 {
+    font-size: 50px;
+}
 
 /* ||| Header Style ||| */
 
-img {
+
+/* ||| Nav Style ||| */
+
+nav img {
     max-width: 100px;
     max-height: 100px;
 }
 
-/*  ||| Background Image |||  */
+/*  ||| Hero |||  */
 
-/* ||| Primary Element Selectors ||| */
+/* ||| Welcome Section ||| */
+
+.welcome {
+    height: 100%;
+}
+
+/* ||| Projects Section ||| */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--primarycolor);
+    width: 99%;
+}
+
+.project1 {
+    width: 22%;
+    padding: 1%;
+    background-color: yellow;
+    order: 1;
+}
+
+.project1:active {
+    order: -1;
+}
+
+.project2 {
+    width: 22%;
+    padding: 1%;
+    background-color: red;
+    order: 2;
+}
+
+.project2:active {
+    order: -1;
+}
+
+.project3 {
+    width: 22%;
+    padding: 1%;
+    background-color: green;
+    order: 3;
+}
+
+.project3:active {
+    order: -1;
+}
+
+.project4 {
+    width: 22%;
+    padding: 1%;
+    background-color: blue;
+    order: 4;
+}
+
+.project4:active {
+    order: -1;
+}
+
+.project5 {
+    width: 22%;
+    padding: 1%;
+    background-color: purple;
+    order: 5;
+}
+
+.project5:active {
+    order: -1;
+    .project1 {
+        order: 5;
+    }
+}
 
 /* ||| Footer Style ||| */
