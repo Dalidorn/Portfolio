@@ -33,7 +33,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 75px;
+    font-size: 50px;
 }
 
 h2 {
@@ -46,12 +46,38 @@ h3 {
 
 /* ||| Header Style ||| */
 
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    background-color: white;
+    justify-content: center;
+    width: 80%;
+    height: 100px;
+    border-radius: 0 0 85% 85%;
+}
 
 /* ||| Nav Style ||| */
 
+nav {
+    display: flex;
+    justify-content: center;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
+
 nav img {
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 70px;
+    max-height: 70px;
+    padding-top: 15px;
 }
 
 /*  ||| Hero |||  */
@@ -60,6 +86,8 @@ nav img {
 
 .welcome {
     height: 100%;
+    padding: 300px 0 400px 0;
+    color: white;
 }
 
 /* ||| Projects Section ||| */
@@ -76,11 +104,6 @@ nav img {
     width: 22%;
     padding: 1%;
     background-color: yellow;
-    order: 1;
-}
-
-.project1:active {
-    order: -1;
 }
 
 .project2 {
@@ -125,9 +148,6 @@ nav img {
 
 .project5:active {
     order: -1;
-    .project1 {
-        order: 5;
-    }
 }
 
 /* ||| Footer Style ||| */
