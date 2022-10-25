@@ -4,8 +4,8 @@
 
 :root {
     --primarycolor: white;
-    --secondarycolor: rgb(31, 0, 0);
-    --tertiarycolor: rgb(1, 1, 24);
+    --secondarycolor: rgb(29, 0, 0);
+    --tertiarycolor: rgb(29, 0, 56);
 }
 
 /* General Config */
@@ -16,8 +16,13 @@
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .backdropgradient {
-    background-image: linear-gradient(var(--secondarycolor), 20%, var(--tertiarycolor));
+    background-image: linear-gradient(var(--secondarycolor), 30%, var(--tertiarycolor));
 }
 
 main {
@@ -38,6 +43,7 @@ h1 {
 
 h2 {
     font-size: 100px;
+    position: relative;
 }
 
 h3 {
@@ -53,11 +59,13 @@ h3 {
 }
 
 header {
-    background-color: white;
+    background-image: linear-gradient(rgb(199, 134, 37), 20%, rgb(165, 58, 15));
     justify-content: center;
     width: 80%;
     height: 100px;
     border-radius: 0 0 85% 85%;
+    border-style: none solid solid solid;
+    border-color: rgb(43, 43, 43);
 }
 
 /* ||| Nav Style ||| */
@@ -86,11 +94,49 @@ nav img {
 
 .welcome {
     height: 100%;
-    padding: 300px 0 400px 0;
+    padding: 300px 0 500px 0;
     color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Animation for Welcome Background */
+
+/* declares the duration, xxx, xxx, iteration count, direction, and name  */
+#streamer1 {
+    animation: 20s linear 1s infinite alternate slideleftloop;
+    position: absolute;
+}
+
+#streamer2 {
+    animation: 20s linear 1s infinite alternate sliderightloop;
+    position: absolute;
+    margin-left: -50vw;
+}
+
+/* @keyframes [name of animation] { defines what the animation will do to the element, in this case slide fomr 0vw to -50vw along the x axis. */
+@keyframes slideleftloop {
+    from {
+      transform: translateX(0vw);
+    }
+
+    to {
+      transform: translateX(-50vw);
+    }
+}
+
+@keyframes sliderightloop {
+    from {
+      transform: translateX(0vw);
+    }
+
+    to {
+      transform: translateX(50vw);
+    }
 }
 
 /* ||| Projects Section ||| */
+
 .projects {
     display: flex;
     flex-wrap: wrap;
